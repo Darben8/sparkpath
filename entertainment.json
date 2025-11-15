@@ -1,0 +1,531 @@
+[
+{
+    "title": "Video Editor",
+    "soc_code": "27-4032.00",
+    "cluster": "Film & Video",
+    "description": "Edit and assemble recorded footage into polished video content for films, television, and online platforms.",
+    "skills": ["Video Editing", "Storytelling", "Attention to Detail", "Creativity", "Timing"],
+    "tools": ["Adobe Premiere Pro", "Final Cut Pro", "DaVinci Resolve"],
+    "education_level": "Bachelor’s in Film/Media recommended; portfolio-based entry common.",
+    "experience_needed": "Internships or independent projects showcasing editing ability.",
+    "training": "Editing bootcamps, media production programs, online tutorials.",
+    "certifications": ["Adobe Premiere Pro Professional Certification"],
+    "salary_range": "$40,000 – $85,000",
+    "resources": [
+      "https://www.youtube.com/watch?v=Hls3Tp7JS8E",
+      "https://www.coursera.org/learn/video-editing"
+    ]
+  },
+{
+    "title": "Cinematographer",
+    "soc_code": "27-4031.00",
+    "cluster": "Film & Video",
+    "description": "Design and execute the visual look of a film or video through lighting, framing, and camera operation.",
+    "skills": ["Lighting", "Camera Operation", "Composition", "Artistic Vision"],
+    "tools": ["Cinema Cameras", "Lighting Kits", "Gimbals"],
+    "education_level": "Film or cinematography degree preferred; strong demo reel essential.",
+    "experience_needed": "Short films or digital content projects.",
+    "training": "Film school, lighting workshops, cinematography MasterClasses.",
+    "certifications": [],
+    "salary_range": "$45,000 – $120,000",
+    "resources": [
+      "https://www.masterclass.com/classes/filmmaking",
+      "https://www.coursera.org/learn/filmmaking"
+    ]
+  },
+{
+    "title": "Camera Operator",
+    "soc_code": "27-4031.00",
+    "cluster": "Film & Video",
+    "description": "Operate cameras during film shoots, TV productions, and live events.",
+    "skills": ["Camera Operation", "Coordination", "Focus Control"],
+    "tools": ["Broadcast Cameras", "Stabilizers", "Tripods"],
+    "education_level": "Film or media programs helpful; hands-on experience valued.",
+    "experience_needed": "Demonstrated ability with camera equipment and shooting techniques.",
+    "training": "Hands-on workshops, online filmmaking courses.",
+    "certifications": [],
+    "salary_range": "$35,000 – $75,000",
+    "resources": [
+      "https://www.youtube.com/watch?v=FkKzYV5JvMo",
+      "https://www.skillshare.com/browse/filmmaking"
+    ]
+  },
+  {
+    "title": "Film Director",
+    "soc_code": "27-2012.00",
+    "cluster": "Film & Video",
+    "description": "Lead the creative and narrative direction of film, TV, or digital productions.",
+    "skills": ["Leadership", "Vision", "Communication", "Script Interpretation"],
+    "tools": ["Storyboards", "DSLR Cameras", "Shot List Software"],
+    "education_level": "Bachelor’s in Film recommended; many are self-taught.",
+    "experience_needed": "Short films and directing samples.",
+    "training": "Film school, directing workshops.",
+    "certifications": [],
+    "salary_range": "$50,000 – $150,000+",
+    "resources": [
+      "https://www.coursera.org/learn/filmmaking",
+      "https://www.youtube.com/watch?v=7Z7oQpZxU8E"
+    ]
+  },
+  {
+    "title": "Producer",
+    "soc_code": "27-2012.00",
+    "cluster": "Film & Video",
+    "description": "Oversee production logistics, budgeting, scheduling, and coordination from preproduction to delivery.",
+    "skills": ["Project Management", "Budgeting", "Hiring", "Leadership"],
+    "tools": ["Production Software", "Scheduling Tools"],
+    "education_level": "Bachelor’s in Film, Business, or Communications.",
+    "experience_needed": "Production coordination or assistant producing.",
+    "training": "Film and production management programs.",
+    "certifications": [],
+    "salary_range": "$55,000 – $150,000",
+    "resources": [
+      "https://www.udemy.com/course/film-producer",
+      "https://www.youtube.com/watch?v=H5z4VnI0wXg"
+    ]
+  },
+  {
+    "title": "Writer / Author",
+    "soc_code": "27-3043.00",
+    "cluster": "Writing & Journalism",
+    "description": "Develop scripts, stories, and written content for creative, journalistic, or entertainment projects.",
+    "skills": ["Storytelling", "Research", "Editing", "Creativity"],
+    "tools": ["Final Draft", "Google Docs", "Scrivener"],
+    "education_level": "Bachelor’s in English, Film, or Journalism helpful.",
+    "experience_needed": "Writing samples or portfolio.",
+    "training": "Creative writing workshops, screenwriting courses.",
+    "certifications": [],
+    "salary_range": "$40,000 – $110,000",
+    "resources": [
+      "https://www.masterclass.com/classes/creative-writing",
+      "https://www.skillshare.com/browse/writing"
+    ]
+  },
+  {
+    "title": "Sound Engineering Technician",
+    "soc_code": "27-4014.00",
+    "cluster": "Film, Music & Sports",
+    "description": "Record, mix, and edit audio for film, music, live events, and studio settings.",
+    "skills": ["Sound Mixing", "Acoustics", "Technical Precision"],
+    "tools": ["Pro Tools", "Audio Mixers", "Microphones"],
+    "education_level": "Associate’s or Bachelor’s in Audio Engineering.",
+    "experience_needed": "Studio or live sound experience.",
+    "training": "Audio engineering bootcamps, DAW courses.",
+    "certifications": ["Avid Pro Tools Certification"],
+    "salary_range": "$35,000 – $90,000",
+    "resources": [
+      "https://www.udemy.com/course/audio-engineering",
+      "https://www.youtube.com/watch?v=VVPu_9_5v6Y"
+    ]
+  },
+  {
+    "title": "Audio/Video Technician",
+    "soc_code": "27-4011.00",
+    "cluster": "Film & Television",
+    "description": "Set up, operate, and troubleshoot audio and video equipment for events and productions.",
+    "skills": ["Equipment Setup", "Troubleshooting", "Timing"],
+    "tools": ["AV Consoles", "Projectors", "Microphones"],
+    "education_level": "Technical certificate or associate degree.",
+    "experience_needed": "Live event or AV experience.",
+    "training": "AV technician training programs.",
+    "certifications": [],
+    "salary_range": "$30,000 – $65,000",
+    "resources": [
+      "https://www.coursera.org/learn/music-tech",
+      "https://www.youtube.com/watch?v=teJf_9DOJcQ"
+    ]
+  },
+  {
+    "title": "Makeup Artist (Theatrical)",
+    "soc_code": "39-5091.00",
+    "cluster": "Film & Television",
+    "description": "Create makeup looks, prosthetics, and character transformations for film, theater, and performances.",
+    "skills": ["Color Theory", "Face Sculpting", "Airbrushing", "Creativity"],
+    "tools": ["Makeup Kits", "Airbrush Systems", "Prosthetic Materials"],
+    "education_level": "Cosmetology school or theatrical makeup training.",
+    "experience_needed": "Portfolio of character looks.",
+    "training": "Makeup artistry programs; special effects workshops.",
+    "certifications": [],
+    "salary_range": "$35,000 – $95,000",
+    "resources": [
+      "https://www.skillshare.com/classes/makeup",
+      "https://www.youtube.com/watch?v=8zQW7C-hK1I"
+    ]
+  },
+  {
+    "title": "Set & Exhibit Designer",
+    "soc_code": "27-1027.00",
+    "cluster": "Film & Television",
+    "description": "Design and build sets, exhibits, and environments for productions and displays.",
+    "skills": ["Spatial Design", "Drafting", "Art Direction"],
+    "tools": ["AutoCAD", "SketchUp", "Set Construction Materials"],
+    "education_level": "Bachelor’s in Design, Architecture, or Theatre.",
+    "experience_needed": "Set designs and digital models.",
+    "training": "Scenic design programs.",
+    "certifications": [],
+    "salary_range": "$40,000 – $90,000",
+    "resources": [
+      "https://www.coursera.org/learn/design",
+      "https://www.youtube.com/watch?v=6J4PpBTV0b8"
+    ]
+  },
+  {
+    "title": "News Analyst / Reporter",
+    "soc_code": "27-3023.00",
+    "cluster": "Writing & Journalism",
+    "description": "Research, write, and report news stories for television, online platforms, radio, and print.",
+    "skills": ["Interviewing", "Research", "Writing", "Public Speaking"],
+    "tools": ["Teleprompters", "Cameras", "Newsroom Software"],
+    "education_level": "Bachelor’s in Journalism or Communications.",
+    "experience_needed": "School newspaper or newsroom internship.",
+    "training": "Broadcast journalism workshops.",
+    "certifications": [],
+    "salary_range": "$35,000 – $95,000",
+    "resources": [
+      "https://www.coursera.org/specializations/journalism",
+      "https://www.youtube.com/watch?v=tO2FJZqXqzY"
+    ]
+  },
+
+  {
+    "title": "Entertainer & Performer (Other)",
+    "soc_code": "27-2099.00",
+    "cluster": "Performance",
+    "description": "Perform in live shows, digital media, or specialized entertainment fields beyond traditional acting roles.",
+    "skills": ["Stage Presence", "Improvisation", "Movement"],
+    "tools": ["Costumes", "Props", "Performance Spaces"],
+    "education_level": "No degree required; specialized training varies.",
+    "experience_needed": "Live performances or demo reels.",
+    "training": "Dance, circus arts, acting, or vocal classes.",
+    "certifications": [],
+    "salary_range": "$25,000 – $100,000",
+    "resources": [
+      "https://www.skillshare.com/browse/performance",
+      "https://www.youtube.com/watch?v=wF4KZKaoGjk"
+    ]
+  },
+
+  {
+    "title": "Actor",
+    "soc_code": "27-2011.00",
+    "cluster": "Performance",
+    "description": "Portray characters for stage, screen, and digital productions.",
+    "skills": ["Acting Technique", "Memorization", "Improvisation", "Character Development"],
+    "tools": ["Scripts", "Acting Methods"],
+    "education_level": "No degree required; drama programs helpful.",
+    "experience_needed": "Auditions and demo reels.",
+    "training": "Acting classes, drama schools.",
+    "certifications": [],
+    "salary_range": "$25,000 – $120,000",
+    "resources": [
+      "https://www.youtube.com/watch?v=wF4KZKaoGjk",
+      "https://www.udemy.com/course/acting"
+    ]
+  },
+
+  {
+    "title": "Dancer",
+    "soc_code": "27-2031.00",
+    "cluster": "Performance",
+    "description": "Perform choreographed routines in concerts, films, and stage productions.",
+    "skills": ["Rhythm", "Flexibility", "Creativity"],
+    "tools": ["Dance Shoes", "Mirrors", "Music Systems"],
+    "education_level": "Dance academy or conservatory training.",
+    "experience_needed": "Dance portfolio or performance videos.",
+    "training": "Dance classes and workshops.",
+    "certifications": [],
+    "salary_range": "$20,000 – $80,000",
+    "resources": [
+      "https://www.youtube.com/watch?v=00XgA7j6u-Y",
+      "https://www.skillshare.com/browse/dance"
+    ]
+  },
+
+  {
+    "title": "Choreographer",
+    "soc_code": "27-2032.00",
+    "cluster": "Performance",
+    "description": "Design and teach dance routines for performances, film, and music videos.",
+    "skills": ["Creativity", "Movement Technique", "Leadership"],
+    "tools": ["Music Editing Software", "Mirrors"],
+    "education_level": "Dance experience required; degree optional.",
+    "experience_needed": "Dance training and teaching experience.",
+    "training": "Choreography workshops.",
+    "certifications": [],
+    "salary_range": "$30,000 – $95,000",
+    "resources": [
+      "https://www.skillshare.com/classes/dance-choreography",
+      "https://www.youtube.com/watch?v=2OK5MQYShZI"
+    ]
+  },
+
+  {
+    "title": "Animator",
+    "soc_code": "27-1014.00",
+    "cluster": "Design & Media",
+    "description": "Create 2D and 3D animations for film, games, and online media.",
+    "skills": ["Drawing", "3D Modeling", "Creativity", "Timing"],
+    "tools": ["Blender", "Maya", "After Effects"],
+    "education_level": "Bachelor’s in Animation or Graphic Design.",
+    "experience_needed": "Animated portfolio required.",
+    "training": "Animation programs, online modeling courses.",
+    "certifications": [],
+    "salary_range": "$50,000 – $110,000",
+    "resources": [
+      "https://www.coursera.org/specializations/animation",
+      "https://www.youtube.com/watch?v=TPrnSACiTJ4"
+    ]
+  },
+
+  {
+    "title": "Graphic Designer",
+    "soc_code": "27-1024.00",
+    "cluster": "Design & Media",
+    "description": "Design branding, digital content, and visual media for entertainment and marketing.",
+    "skills": ["Typography", "Creativity", "Layout Design"],
+    "tools": ["Photoshop", "Illustrator", "Canva"],
+    "education_level": "Bachelor’s in Graphic Design preferred.",
+    "experience_needed": "Design portfolio.",
+    "training": "Design courses and workshops.",
+    "certifications": [],
+    "salary_range": "$40,000 – $85,000",
+    "resources": [
+      "https://www.coursera.org/learn/graphic-design",
+      "https://www.youtube.com/watch?v=O7CByxyF9pI"
+    ]
+  },
+
+  {
+    "title": "Content Creator",
+    "soc_code": "27-4021.00",
+    "cluster": "Design & Media",
+    "description": "Create short-form videos and digital content for social media and brands.",
+    "skills": ["Editing", "Storytelling", "Social Media Strategy"],
+    "tools": ["CapCut", "Premiere Rush", "Canva"],
+    "education_level": "No degree required; portfolio-based.",
+    "experience_needed": "Clips and reels.",
+    "training": "Social media strategy courses.",
+    "certifications": [],
+    "salary_range": "$30,000 – $95,000",
+    "resources": [
+      "https://www.youtube.com/watch?v=_vK7K8jRSOM",
+      "https://www.skillshare.com/classes/content-creation"
+    ]
+  },
+
+  {
+    "title": "Musician / Singer",
+    "soc_code": "27-2042.00",
+    "cluster": "Music",
+    "description": "Perform music as a vocalist or instrumentalist for live shows, recordings, or media.",
+    "skills": ["Vocal Technique", "Rhythm", "Musicianship"],
+    "tools": ["Microphones", "Instruments", "Music Software"],
+    "education_level": "No degree required; music training common.",
+    "experience_needed": "Demos or performance reels.",
+    "training": "Vocal lessons, music theory classes.",
+    "certifications": [],
+    "salary_range": "$25,000 – $120,000",
+    "resources": [
+      "https://www.coursera.org/learn/sing",
+      "https://www.youtube.com/watch?v=GCpU4xTA54k"
+    ]
+  },
+
+  {
+    "title": "Music Director / Composer",
+    "soc_code": "27-2041.00",
+    "cluster": "Music",
+    "description": "Compose, arrange, and direct musical pieces for film, concerts, and media.",
+    "skills": ["Composition", "Music Theory", "Arranging"],
+    "tools": ["Logic Pro", "Sibelius", "Ableton"],
+    "education_level": "Bachelor’s in Music recommended.",
+    "experience_needed": "Composition samples or directing experience.",
+    "training": "Music theory courses, orchestration training.",
+    "certifications": [],
+    "salary_range": "$45,000 – $120,000",
+    "resources": [
+      "https://www.masterclass.com/classes/hans-zimmer-teaches-film-scoring",
+      "https://www.coursera.org/learn/music-theory"
+    ]
+  },
+
+  {
+    "title": "Radio & TV Announcer",
+    "soc_code": "27-3011.00",
+    "cluster": "Sports & Broadcasting",
+    "description": "Host radio or TV segments, deliver news, commentary, or sports updates.",
+    "skills": ["Public Speaking", "Writing", "Audio Presentation"],
+    "tools": ["Microphones", "Broadcast Software"],
+    "education_level": "Bachelor’s in Journalism or Communications preferred.",
+    "experience_needed": "Campus radio or broadcast samples.",
+    "training": "Broadcasting courses.",
+    "certifications": [],
+    "salary_range": "$35,000 – $95,000",
+    "resources": [
+      "https://www.coursera.org/specializations/journalism",
+      "https://www.youtube.com/watch?v=BqWkI4X6dk4"
+    ]
+  },
+
+  {
+    "title": "Marketing Specialist / Publicist",
+    "soc_code": "13-1161.00",
+    "cluster": "Business, Sports & Entertainment",
+    "description": "Promote artists, productions, brands, and entertainment events.",
+    "skills": ["Marketing Strategy", "Content Writing", "Analytics"],
+    "tools": ["Google Analytics", "Canva", "Email Marketing Tools"],
+    "education_level": "Bachelor’s in Marketing or Communications.",
+    "experience_needed": "Marketing or PR internship.",
+    "training": "Digital marketing courses.",
+    "certifications": ["Google Analytics Certification"],
+    "salary_range": "$45,000 – $95,000",
+    "resources": [
+      "https://www.coursera.org/specializations/digital-marketing",
+      "https://www.youtube.com/watch?v=5aNtsdG1gZQ"
+    ]
+  },
+
+  {
+    "title": "Business Operations Specialist",
+    "soc_code": "13-1199.00",
+    "cluster": "Business & Sports",
+    "description": "Support operational strategy and logistics for entertainment, sports, and media companies.",
+    "skills": ["Data Analysis", "Project Management", "Communication"],
+    "tools": ["Excel", "CRM Systems", "Project Management Software"],
+    "education_level": "Bachelor’s in Business or related field.",
+    "experience_needed": "Operations or analyst internship.",
+    "training": "Business analytics courses.",
+    "certifications": [],
+    "salary_range": "$50,000 – $100,000",
+    "resources": [
+      "https://www.coursera.org/specializations/business-analytics",
+      "https://www.youtube.com/watch?v=QPmFjJz7Zq4"
+    ]
+  },
+
+  {
+    "title": "Event Planner",
+    "soc_code": "13-1121.00",
+    "cluster": "Sports & Events",
+    "description": "Plan and coordinate concerts, sports events, conferences, and entertainment gatherings.",
+    "skills": ["Organization", "Negotiation", "Budgeting"],
+    "tools": ["Event Softwares", "Scheduling Tools"],
+    "education_level": "Bachelor’s in Hospitality or Business.",
+    "experience_needed": "Event planning experience or volunteering.",
+    "training": "Event planning programs.",
+    "certifications": ["Certified Meeting Professional (CMP)"],
+    "salary_range": "$40,000 – $85,000",
+    "resources": [
+      "https://www.coursera.org/learn/event-management",
+      "https://www.youtube.com/watch?v=Bd3ZVCx2UHs"
+    ]
+  },
+
+  {
+    "title": "General & Operations Manager",
+    "soc_code": "11-1021.00",
+    "cluster": "Business & Sports",
+    "description": "Oversee daily operations, staff, budgeting, and organizational strategy in entertainment and sports companies.",
+    "skills": ["Leadership", "Budgeting", "Operations Management"],
+    "tools": ["ERP Systems", "Analytics Tools"],
+    "education_level": "Bachelor’s in Business; MBA preferred.",
+    "experience_needed": "Management experience.",
+    "training": "Operations management courses.",
+    "certifications": [],
+    "salary_range": "$60,000 – $150,000",
+    "resources": [
+      "https://www.coursera.org/learn/operations",
+      "https://www.youtube.com/watch?v=9x6bN_xwS5k"
+    ]
+  },
+
+  {
+    "title": "HR Specialist (Talent Recruitment)",
+    "soc_code": "13-1071.00",
+    "cluster": "Business & Sports",
+    "description": "Recruit talent, manage onboarding, and support workforce planning for entertainment and media companies.",
+    "skills": ["Communication", "Interviewing", "HR Systems"],
+    "tools": ["ATS Platforms", "HRIS Systems"],
+    "education_level": "Bachelor’s in HR or Business.",
+    "experience_needed": "Recruiting or HR internship.",
+    "training": "HR certification programs.",
+    "certifications": ["SHRM-CP"],
+    "salary_range": "$50,000 – $95,000",
+    "resources": [
+      "https://www.coursera.org/learn/human-resources",
+      "https://www.youtube.com/watch?v=moO9cKQ8iO8"
+    ]
+  },
+
+  {
+    "title": "Lawyer",
+    "soc_code": "23-1011.00",
+    "cluster": "Business & Management",
+    "description": "Provide legal counsel in areas such as contracts, intellectual property, and entertainment law.",
+    "skills": ["Legal Research", "Negotiation", "Writing"],
+    "tools": ["Legal Databases", "Document Management Tools"],
+    "education_level": "Juris Doctor (JD) required.",
+    "experience_needed": "Law firm or in-house legal experience.",
+    "training": "Legal specialization courses.",
+    "certifications": [],
+    "salary_range": "$80,000 – $180,000",
+    "resources": [
+      "https://www.coursera.org/specializations/law",
+      "https://www.youtube.com/watch?v=_M4H4_-qj8M"
+    ]
+  },
+
+  {
+    "title": "Accountant",
+    "soc_code": "13-2011.00",
+    "cluster": "Business & Management",
+    "description": "Manage financial reporting, auditing, and budgeting for entertainment companies.",
+    "skills": ["Accounting", "Financial Analysis", "Attention to Detail"],
+    "tools": ["QuickBooks", "Excel", "ERP Systems"],
+    "education_level": "Bachelor’s in Accounting or Finance.",
+    "experience_needed": "Accounting internship or entry-level role.",
+    "training": "CPA prep courses.",
+    "certifications": ["CPA"],
+    "salary_range": "$55,000 – $110,000",
+    "resources": [
+      "https://www.coursera.org/learn/accounting",
+      "https://www.youtube.com/watch?v=48I0IHlgi0U"
+    ]
+  },
+
+  {
+    "title": "Office Clerk",
+    "soc_code": "43-9061.00",
+    "cluster": "Business & Management",
+    "description": "Perform administrative support tasks for offices in entertainment and business environments.",
+    "skills": ["Organization", "Communication", "Office Software"],
+    "tools": ["Microsoft Office", "CRM Systems"],
+    "education_level": "High school diploma; administrative experience helpful.",
+    "experience_needed": "Office or administrative experience.",
+    "training": "Office administration courses.",
+    "certifications": [],
+    "salary_range": "$28,000 – $50,000",
+    "resources": [
+      "https://www.coursera.org/learn/administrative-support",
+      "https://www.youtube.com/watch?v=M9b6WZ8v9_k"
+    ]
+  },
+
+  {
+    "title": "Talent Agent",
+    "soc_code": "13-1071.01",
+    "cluster": "Performance & Media",
+    "description": "Represent creative professionals by negotiating contracts, securing opportunities, and managing careers.",
+    "skills": ["Negotiation", "Networking", "Industry Knowledge", "Sales"],
+    "tools": ["CRM Platforms", "Email Marketing Tools"],
+    "education_level": "Bachelor’s in Business, Communications, or related field.",
+    "experience_needed": "Talent agency internship or assistant work.",
+    "training": "Entertainment business programs.",
+    "certifications": [],
+    "salary_range": "$45,000 – $150,000+",
+    "resources": [
+      "https://www.masterclass.com/classes/entertainment-business",
+      "https://www.youtube.com/watch?v=soa6-0o6UOM"
+    ]
+  }
+]
