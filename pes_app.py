@@ -1,136 +1,31 @@
-# app.py
+# pes_app.py - Streamlit career recommendation app
 import os
 import re
-import time
 import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from numpy import array
 from numpy.linalg import norm
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from pinecone import Pinecone, ServerlessSpec
+from pinecone import Pinecone
 from langchain_core.prompts import PromptTemplate
-from langchain_core.output_parsers import StrOutputParser
 from langchain_classic.chains import LLMChain
-#from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 
 load_dotenv(".env")
+
 # Load API keys from environment variables
 openapi_key = os.environ.get("OPENAI_API_KEY")
 pineconeapi_key = os.environ.get("PINECONE_API_KEY")
 
-# Init clients
+# Initialize clients
 INDEX_NAME = "entertainment-careers"
-emb = OpenAIEmbeddings(model="text-embedding-3-large")
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 pc = Pinecone(api_key=pineconeapi_key)
 llm = ChatOpenAI(model="gpt-4o-mini", api_key=openapi_key, temperature=0.3)
 
-# # Create index if needed
-# existing_indexes = [i["name"] for i in pc.list_indexes()]
-
-# if INDEX_NAME not in existing_indexes:
-#     pc.create_index(
-#         name=INDEX_NAME,
-#         dimension=3072,                 # text-embedding-3-large dimension
-#         metric="cosine",
-#         spec=ServerlessSpec(
-#             cloud="aws",
-#             region="us-east-1"
-#         ),
-#     )
-#     print("Creating index... waiting 10s")
-#     time.sleep(10)
-
+# Get Pinecone index (assumes index already created and populated by data_indexing.py)
 index = pc.Index(INDEX_NAME)
-
-# Load roles dataset
-#roles_df = pd.read_csv("entertainment_roles_riasec.csv", encoding='utf-8-sig').fillna("")
-
-# roles_df = pd.read_csv("entertainment_roles_riasec.csv")
-# roles_df = roles_df.fillna("")
-
-# # Ensure required columns exist
-# required_cols = [
-#     "Title","SOC_Code","Cluster","Description","Skills","Tools","Education_Level",
-#     "Experience_Needed","Training","Certifications","Salary_Range","Resources",
-#     "R","I","A","S","E","C"
-# ]
-
-# missing = [c for c in required_cols if c not in roles_df.columns]
-# if missing:
-#     raise ValueError(f"Missing columns: {missing}")
-
-# def format_riasec(row):
-#     return (
-#         f"R:{int(row['R'])},"
-#         f"I:{int(row['I'])},"
-#         f"A:{int(row['A'])},"
-#         f"S:{int(row['S'])},"
-#         f"E:{int(row['E'])},"
-#         f"C:{int(row['C'])}"
-#     )
-
-# #build text for embedding
-# def build_text(row):
-#     return (
-#         f"Title: {row['Title']}. "
-#         f"Description: {row['Description']}. "
-#         f"Skills: {row['Skills']}. "
-#         f"Tools: {row['Tools']}. "
-#         f"Education: {row['Education_Level']}. "
-#         f"Experience: {row['Experience_Needed']}. "
-#         f"Training: {row['Training']}. "
-#         f"Certifications: {row['Certifications']}. "
-#         f"Salary Range: {row['Salary_Range']}. "
-#         f"Resources: {row['Resources']}. "
-#         f"Cluster: {row['Cluster']}."
-#     )
-# # Embed and upsert roles
-# vectors = []
-
-# for i, row in roles_df.iterrows():
-#     text = build_text(row)
-#     vector = emb.embed_query(text)
-
-#     metadata = {
-#         "Title": row["Title"],
-#         "SOC_Code": row["SOC_Code"],
-#         "Cluster": row["Cluster"],
-#         "Description": row["Description"],
-#         "Skills": row["Skills"],
-#         "Tools": row["Tools"],
-#         "Education_Level": row["Education_Level"],
-#         "Experience_Needed": row["Experience_Needed"],
-#         "Training": row["Training"],
-#         "Certifications": row["Certifications"],
-#         "Salary_Range": row["Salary_Range"],
-#         "Resources": row["Resources"],
-#         # RIASEC separate keys
-#         "R": int(row["R"]),
-#         "I": int(row["I"]),
-#         "A": int(row["A"]),
-#         "S": int(row["S"]),
-#         "E": int(row["E"]),
-#         "C": int(row["C"])
-#     }
-
-#     vectors.append({
-#         "id": f"{row['Title']}_{i}",
-#         "values": vector,
-#         "metadata": metadata
-#     })
-
-# #Chunk uploads (Pinecone limit ≈ 100 vectors per batch recommended)
-# BATCH = 80
-# for i in range(0, len(vectors), BATCH):
-#     batch = vectors[i:i+BATCH]
-#     index.upsert(vectors=batch)
-#     print(f"Upserted {i + len(batch)} / {len(vectors)}")
-
-# print("Indexing complete.")
 
 #RIASEC quiz questions (simplified)
 quiz_questions = {
@@ -173,28 +68,28 @@ user_scores_display = {riasec_fullnames[k]: v for k, v in user_scores.items()}
 st.write("### Your RIASEC Scores:")
 st.write(user_scores_display)
 
-# # Bar chart
-# df_scores = pd.DataFrame.from_dict(user_scores_display, orient="index", columns=["Score"])
-# df_scores = df_scores.sort_values("Score", ascending=True)  # optional: sort for chart
-# fig, ax = plt.subplots(figsize=(8, 4))
-# df_scores.plot(kind="barh", legend=False, ax=ax, color="skyblue")
-# ax.set_xlabel("Score")
-# ax.set_ylabel("")
-# ax.set_title("Your RIASEC Personality Scores")
-# ax.grid(axis="x", linestyle="--", alpha=0.7)
-# st.pyplot(fig)
+# Bar chart
+df_scores = pd.DataFrame.from_dict(user_scores_display, orient="index", columns=["Score"])
+df_scores = df_scores.sort_values("Score", ascending=True)  # optional: sort for chart
+fig, ax = plt.subplots(figsize=(8, 4))
+df_scores.plot(kind="barh", legend=False, ax=ax, color="skyblue")
+ax.set_xlabel("Score")
+ax.set_ylabel("")
+ax.set_title("Your RIASEC Personality Scores")
+ax.grid(axis="x", linestyle="--", alpha=0.7)
+st.pyplot(fig)
 
-st.info(
-    """
-    The RIASEC model matches your personality and interests to six career types:
-    - **Realistic (R):** Hands-on, technical, or practical work
-    - **Investigative (I):** Analytical, scientific, or problem-solving tasks
-    - **Artistic (A):** Creative work, arts, design, or expression
-    - **Social (S):** Helping, teaching, or interacting with people
-    - **Enterprising (E):** Leadership, persuasion, or business-oriented tasks
-    - **Conventional (C):** Organized, structured, and rule-following roles
-    """
-)
+# st.info(
+#     """
+#     The RIASEC model matches your personality and interests to six career types:
+#     - **Realistic (R):** Hands-on, technical, or practical work
+#     - **Investigative (I):** Analytical, scientific, or problem-solving tasks
+#     - **Artistic (A):** Creative work, arts, design, or expression
+#     - **Social (S):** Helping, teaching, or interacting with people
+#     - **Enterprising (E):** Leadership, persuasion, or business-oriented tasks
+#     - **Conventional (C):** Organized, structured, and rule-following roles
+#     """
+# )
 
 st.subheader("Tell us about your interests and passions in entertainment")
 user_text = st.text_area("Write a few sentences about what excites you:")
@@ -282,19 +177,31 @@ if st.button("Find My Top Careers"):
             if not salary:
                 salary_str = "N/A"
             else:
-                # Keep only digits, commas, hyphens
-                salary_clean = re.sub(r"[^\d\-,]", "", salary)
-                # Split ranges on hyphen
-                parts = [p.strip() for p in salary_clean.split("-") if p.strip()]
-                try:
-                    if len(parts) == 2:
-                        salary_str = f"${int(parts[0].replace(',','')):,} - ${int(parts[1].replace(',','')):,}"
-                    elif len(parts) == 1:
-                        salary_str = f"${int(parts[0].replace(',','')):,}"
-                    else:
-                        salary_str = "N/A"
-                except:
+            # Normalize common encoding problems BEFORE parsing
+                txt = (
+                    salary
+                    .replace("â€“", "-")
+                    .replace("â€”", "-")
+                    .replace("–", "-")
+                    .replace("—", "-")
+                    .replace("Â", "")
+                    .replace("€", "")
+                    )
+                # Extract all number-like patterns
+                nums = re.findall(r"\$?([\d,]+)", txt)
+
+                if len(nums) == 0:
                     salary_str = "N/A"
+                elif len(nums) == 1:
+                    n1 = int(nums[0].replace(",", ""))
+                    salary_str = f"${n1:,}"
+                else:
+                    # Take first two numbers as the range
+                    n1 = int(nums[0].replace(",", ""))
+                    n2 = int(nums[1].replace(",", ""))
+
+                    low, high = sorted([n1, n2])
+                    salary_str = f"${low:,} - ${high:,}"
 
             # --- Education ---
             edu = clean_text(career.get("Education_Level", ""))
